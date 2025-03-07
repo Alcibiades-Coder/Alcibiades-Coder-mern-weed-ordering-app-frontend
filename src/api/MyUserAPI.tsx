@@ -3,7 +3,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { toast } from "sonner";
 import { User } from "@/types";
 
-const API_BASE_URL = "http://localhost:7000";
+const API_BASE_URL = process.env.VITE_API_BASE_URL;
+
 console.log(API_BASE_URL);
 console.log(`${API_BASE_URL}/api/my/user`);
 
